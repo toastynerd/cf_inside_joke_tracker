@@ -1,4 +1,4 @@
-Inside Joke Tracker for Books
+Inside Joke Tracker(for books)
 ===============================
 A small app a day for code fellows that tracks
 the inside jokes that come up in books and 
