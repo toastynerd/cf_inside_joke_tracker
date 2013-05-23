@@ -1,0 +1,8 @@
+<%= form_for(@in_the_know_peep) do |f| %>
+  <%= f.error_messages %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit :class => "button" %>
+<% end %>

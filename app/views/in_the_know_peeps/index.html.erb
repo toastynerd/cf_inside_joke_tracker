@@ -1,0 +1,7 @@
+<div class="panel large-8 column">
+  <%= link_to "New Peep", new_in_the_know_peep_path, :class => "button expand" %>
+  <h2>In the Know Peeps</h2>
+  <% @in_the_know_peeps.each do |peep| %>
+  <h4><%= link_to peep.name, peep %></h4>
+  <% end %>
+</div>

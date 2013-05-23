@@ -1,0 +1,2 @@
+module InTheKnowPeepsHelper
+end

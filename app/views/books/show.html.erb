@@ -1,0 +1,14 @@
+<div class="panel large-10">
+  <h2><%= @book.name %></h2>
+  <p><%= @book.description %></p>
+  <ul>
+    <% @book.jokes.each do |joke| %>
+     <li> <%= link_to joke.name, [@book, joke] %> </li>
+      <% end %>
+  </ul>
+  <%= link_to "Edit Book", edit_book_path, :class => "button" %>
+  <%= link_to "Burn the Book!", book_path(@book), :method => :delete, 
+                :confirm => "Are you sure you want to throw this book to the flames" +
+                            " you Nazi bastard?", :class => "button" %>
+  <%= link_to "Create a New Joke", new_book_joke_path(@book), :class => "button" %>
+</div>

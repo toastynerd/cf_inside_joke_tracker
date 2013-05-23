@@ -1,7 +1,11 @@
 InsideJokeTracker::Application.routes.draw do
   root :to => "books#index"
 
-  resources :books
+  resources :books do
+    resources :jokes
+  end
+
+  resources :in_the_know_peeps
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -7,6 +7,9 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
+#for error messages on forms
+gem 'dynamic_form'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,7 +30,7 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'factory_girl'
+  gem 'factory_girl', '2.6.4'
 end
 
 gem 'jquery-rails'

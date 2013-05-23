@@ -1,0 +1,9 @@
+<div class="panel large-8 column">
+  <h2>From <%= @book.name %></h2>
+  <h4><%= @joke.name %></h4>
+  <%= @joke.meaning %>
+  <%= link_to "Edit Joke", edit_book_joke_path, :class => "button" %>
+  <%= link_to "Delete Joke", [@book,@joke], :method => :delete,
+                      :confirm => "A joke cannot be untold, are you sure?", 
+                      :class => "button" %>
+</div>
